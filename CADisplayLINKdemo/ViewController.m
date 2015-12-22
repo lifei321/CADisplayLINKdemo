@@ -48,7 +48,7 @@
     self.displayLink = [CADisplayLink displayLinkWithTarget:self
                                                    selector:@selector(handleDisplayLink:)];
     [self.displayLink addToRunLoop:[NSRunLoop currentRunLoop]
-                           forMode:NSDefaultRunLoopMode];
+                           forMode:NSRunLoopCommonModes];
     
     
     LFRound* round = [[LFRound alloc]init];
